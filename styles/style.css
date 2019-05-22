@@ -460,6 +460,10 @@ button {
     font-weight: 500;
 }
 
+.partners {
+    display: none;
+}
+
 .partners h2 {
     font-size: 3em;
     margin-left: 15%;
