@@ -646,13 +646,7 @@ footer p {
     line-height: 1.5em;
 }
 
-
-
-
-
-
-
-@media (min-width: 1px) and (max-width: 420px) {
+@media (max-width: 480px) {
     .welcome {
         display: none;
     }
