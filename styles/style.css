@@ -650,22 +650,26 @@ footer p {
     line-height: 1.5em;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 100px) and (max-width: 480px) {
     .welcome {
         display: none;
     }
+
     .welcome p:first-of-type {
         font-size: 2em;
         padding-left: 0;
         margin-left: 15%;
     }
+
     .welcome p:last-of-type {
         font-size: 1em;
         margin-left: 15%;
     }
+
     .welcome button {
         margin-left: 15%;
     }
+
     .triplets {
         display: grid;
         grid-template-rows: 1fr 4fr 4fr 4fr;
@@ -675,81 +679,100 @@ footer p {
         margin-bottom: 15%;
         display: none;
     }
+
     .triplets article:first-of-type {
         grid-area: 2/1/3/2;
     }
+
     .triplets article:nth-of-type(2) {
         grid-area: 3/1/4/2;
     }
+
     .triplets article:last-of-type {
         grid-area: 4/1/5/2;
     }
 
     .triplets article {
-        margin-top:  5%;
+        margin-top: 5%;
     }
+
     .triplets h2 {
         margin-bottom: 0;
         padding-bottom: 0;
         margin-top: auto;
     }
+
     .blabla {
         display: grid;
         grid-template-rows: 1fr 0.5fr;
         grid-template-columns: 100%;
-        margin-bottom:  15%;
+        margin-bottom: 15%;
     }
+
     .blabla article:first-of-type {
         grid-area: 2/1/3/2;
     }
+
     .blabla article:first-of-type h2 {
         padding-left: 15%;
     }
+
     .blabla article:first-of-type p {
         margin-bottom: 0;
         padding-left: 15%;
     }
+
     .blabla article:last-of-type {
         grid-area: 1/1/2/2;
         padding-left: 15%;
     }
+
     .blabla article:last-of-type h2 {
         padding-left: 0;
     }
+
     .blabla article:last-of-type p {
         padding-left: 0;
     }
+
     .blabla article:last-of-type p:last-of-type {
         padding-left: 0;
     }
+
     .blabla article:last-of-type ul {
         padding-left: 0;
     }
+
     .blabla article:last-of-type button {
         margin-left: 0;
     }
-    .about {
-/*        ??*/
-    }
+
     .quotes {
         height: auto;
         margin-bottom: 15%;
     }
-    .quotes article:first-of-type p:first-of-type , .quotes article:first-of-type p:nth-of-type(3) {
+
+    .quotes article:first-of-type p:first-of-type,
+    .quotes article:first-of-type p:nth-of-type(3) {
         font-size: 1.8rem;
         padding-right: 7%;
     }
-    .quotes article:first-of-type p:last-of-type , .quotes article:first-of-type p:nth-of-type(2) {
+
+    .quotes article:first-of-type p:last-of-type,
+    .quotes article:first-of-type p:nth-of-type(2) {
         padding-right: 9%;
         font-size: 1.3rem
     }
+
     .quotes article:first-of-type p:last-of-type {
         padding-bottom: 2em;
         margin-bottom: 0;
     }
+
     .partners {
         display: none;
     }
+
     .partners ul {
         display: flex;
         justify-content: space-between;
@@ -757,12 +780,9 @@ footer p {
         margin-left: 15%;
         margin-right: 15%
     }
+
     .partners ul li:first-of-type {
         padding-left: 0;
         margin-left: 0;
     }
 }
-
-
-
-
