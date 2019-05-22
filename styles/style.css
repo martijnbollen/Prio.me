@@ -491,6 +491,7 @@ button {
 
 .partners {
     margin-bottom: 150px;
+    display: none;
 }
 
 
@@ -619,6 +620,7 @@ button {
     display: flex;
     padding-left: 0;
     justify-content: space-between;
+    width: 70%;
 }
 
 .socials ul li {
@@ -626,7 +628,7 @@ button {
 }
 
 .socials ul li img {
-    height: 3.2em;
+    height: 3.6em;
 }
 
 footer {
@@ -819,10 +821,6 @@ footer p {
     .quotes article:first-of-type p:last-of-type {
         padding-bottom: 2em;
         margin-bottom: 0;
-    }
-
-    .partners {
-        display: none;
     }
 
     .partners ul {
