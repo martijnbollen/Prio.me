@@ -11,8 +11,7 @@ nav {
     background-color: white;
     margin-top: 0em;
     padding-top: 0em;
-    position: relative;
-    display: none;
+
 
 }
 
@@ -460,10 +459,6 @@ button {
     font-weight: 500;
 }
 
-.partners {
-    display: none;
-}
-
 .partners h2 {
     font-size: 3em;
     margin-left: 15%;
@@ -559,7 +554,7 @@ button {
     grid-area: 1/1/2/2;
 }
 
-.infos article:last-of-type {
+.socials {
     grid-area: 1/2/2/3;
 }
 
@@ -609,7 +604,8 @@ button {
 }
 
 .socials {
-    padding-left: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .socials h3 {
@@ -622,10 +618,11 @@ button {
 .socials ul {
     display: flex;
     padding-left: 0;
+    justify-content: space-between;
 }
 
 .socials ul li {
-    padding-right: 7%;
+    padding-right: 0%;
 }
 
 .socials ul li img {
@@ -650,34 +647,41 @@ footer p {
     line-height: 1.5em;
 }
 
-@media (min-width: 100px) and (max-width: 480px) {
-    .welcome {
-        display: none;
-    }
 
+
+
+
+@media (min-width: 100px) and (max-width: 480px) {
+    button {
+        padding: 0.8em 0.9em;
+    }
     .welcome p:first-of-type {
         font-size: 2em;
         padding-left: 0;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .welcome p:last-of-type {
         font-size: 1em;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .welcome button {
-        margin-left: 15%;
+        margin-left: 10%;
+        padding
+    }
+
+    nav {
+        display: none;
     }
 
     .triplets {
         display: grid;
         grid-template-rows: 1fr 4fr 4fr 4fr;
         grid-template-columns: 100%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
         margin-bottom: 15%;
-        display: none;
     }
 
     .triplets article:first-of-type {
@@ -746,16 +750,63 @@ footer p {
     .blabla article:last-of-type button {
         margin-left: 0;
     }
+    .about {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5em 10em 10em 10em 10em;
+    }
+
+    .about img:first-of-type {
+        grid-area: 2/1/3/2;
+    }
+
+    .about img:last-of-type {
+        grid-area: 4/1/5/2;
+        height: 100%
+    }
+    .about article:first-of-type {
+        grid-area: 3/1/4/2;
+    }
+
+    .about article:last-of-type {
+        grid-area: 5/1/6/2;
+    }
+    .about article:first-of-type p {
+        padding-right: 10%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+    .about article:last-of-type p {
+        padding-right: 10%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+    .about article h3 {
+        padding-top: 0.2em
+    }
+
 
     .quotes {
         height: auto;
+        display: grid;
+        grid-template-rows: 1fr 0.75fr;
+        grid-template-columns: 100%;
         margin-bottom: 15%;
+    }
+    .quotes article:first-of-type {
+        grid-area: 1/1/2/2;
+    }
+    .quotes article:last-of-type {
+        grid-area: 2/1/3/2;
+        height: 100%;
     }
 
     .quotes article:first-of-type p:first-of-type,
     .quotes article:first-of-type p:nth-of-type(3) {
         font-size: 1.8rem;
-        padding-right: 7%;
+        padding-left: 10%;
     }
 
     .quotes article:first-of-type p:last-of-type,
@@ -784,5 +835,42 @@ footer p {
     .partners ul li:first-of-type {
         padding-left: 0;
         margin-left: 0;
+    }
+
+    .infos {
+        display: grid;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 100% !important;
+        background-image: url(../img/toetsenbord.jpg);
+        background-size: cover;
+        height: 32em;
+    }
+
+    .infos article:first-of-type {
+        grid-area: 1/1/2/2;
+    }
+
+    .infos article:first-of-type ul {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .infos article:first-of-type ul li {
+        width: auto;
+    }
+    .infos article:first-of-type ul li:first-of-type {
+        width: 80%;
+    }
+    .infos article:last-of-type {
+        grid-area: 2/1/3/2;
+    }
+    .socials h3 {
+        padding-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        font-weight: 500
+    }
+    footer {
+        font-size: 0.8em;
     }
 }
