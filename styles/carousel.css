@@ -1,0 +1,17 @@
+.item img {
+    height: 3em;
+    width: auto;
+}
+
+.item .active {
+    height: 3em;
+    width: auto;
+}
+
+.carousel-inner > .item > img , .carousel-inner > .item > a > img {
+    width: auto;
+    height: 3em;
+}
+
+
+https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp
