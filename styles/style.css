@@ -826,6 +826,7 @@ footer p {
     .quotes article:first-of-type p:nth-of-type(3) {
         font-size: 1.8rem;
         padding-left: 10%;
+        padding-right: 8%;
     }
 
     .quotes article:first-of-type p:last-of-type,
@@ -863,6 +864,7 @@ footer p {
 
     .infos article:first-of-type {
         grid-area: 1/1/2/2;
+        padding-bottom: 1em;
     }
 
     .infos article:first-of-type ul {
@@ -896,29 +898,119 @@ footer p {
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
-    nav {
-        display: none;
-    }
-    .welcome {
-        display: none;
-    }
-    .blabla {
-        display: none;
-    }
-    .triplets {
-        display: none;
-    }
-    .quotes {
-        display: none;
-    }
-    .infos {
-        display: none;
-    }
+@media (min-width: 481px) and (max-width: 767px) {
+
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1025px) {
+    h2 {
+        font-size: 2.5em !important;
+    }
     nav {
         display: none;
+    }
+    section.welcome {
+        margin-bottom: 10%;
+    }
+    .welcome p:first-of-type {
+        margin-left: 10%;
+        margin-right: 5%;
+        padding-right: 0;
+        width: auto;
+    }
+    .welcome p:last-of-type {
+        margin-left: 10%;
+        width: auto;
+        margin-right: 10%;
+    }
+    .welcome button {
+        margin-left: 10%;
+    }
+    .triplets {
+        margin-bottom: 10%;
+    }
+
+    .triplets article {
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 100%;
+        height: 30em
+    }
+    .triplets article p {
+        margin-bottom: 0;
+        height: auto;
+        overflow: hidden;
+    }
+    .blabla {
+        margin-bottom: 10%;
+    }
+    .blabla article:first-of-type h2, .blabla article:first-of-type p {
+        padding-left: 20%;
+    }
+    .blabla article:last-of-type h2, .blabla article:last-of-type p {
+        padding-left: 2rem !important;
+        margin-right: 20%;
+        padding-right: 0 !important;
+    }
+    .blabla article:last-of-type ul {
+        padding-bottom: 2em
+    }
+    .blabla article:last-of-type button {
+        padding: 0.6em 0.9em;
+    }
+    .about {
+        display: grid;
+        grid-template-rows: 20% 40% 40%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+    .about article:first-of-type h3 , .about article:last-of-type h3   {
+        padding-top: 0.4em;
+        padding-right: 1em
+    }
+    .about article:first-of-type p {
+        padding-right: 2em;
+        overflow: hidden;
+    }
+    .about article:last-of-type p {
+        padding-right: 2em;
+        margin-bottom: 1em;
+    }
+    .quotes {
+        margin-bottom: 10%;
+        height: auto;
+    }
+    .quotes article:first-of-type p:first-of-type {
+        padding-top: 2em
+    }
+    .quotes article:first-of-type p:first-of-type , .quotes article:first-of-type p:nth-of-type(3) {
+        padding-left: 10%;
+        font-size: 2rem
+    }
+    .infos article:first-of-type ul {
+        padding-left: 20%;
+    }
+    .infos article:first-of-type ul li {
+        background-size: 2em !important;
+        padding-left: 2.5em;
+        width: 60%;
+    }
+    .infos article:first-of-type ul li:first-of-type {
+        width: 62%;
+    }
+    .infos {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .socials {
+        padding-left: 0;
+    }
+    .socials ul li {
+        padding-right: 1em;
+    }
+    .socials ul li img {
+        height: 3em;
     }
 }
