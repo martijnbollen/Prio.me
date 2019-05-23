@@ -878,6 +878,9 @@ footer p {
     .infos article:first-of-type ul li:first-of-type {
         width: 80%;
     }
+    .infos article:first-of-type ul li:nth-of-type(2) {
+        text-decoration: none;
+    }
     .infos article:last-of-type {
         grid-area: 2/1/3/2;
     }
