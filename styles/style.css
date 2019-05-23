@@ -654,6 +654,9 @@ footer p {
 
 
 @media (min-width: 100px) and (max-width: 480px) {
+    h2 {
+        font-size: 2em !important;
+    }
     button {
         padding: 0.6em 0.9em;
         font-size: 1.3em;
@@ -671,7 +674,7 @@ footer p {
 
     .welcome button {
         margin-left: 10%;
-        padding
+        padding: 0.5em 1.5em;
     }
 
     nav {
@@ -680,7 +683,7 @@ footer p {
 
     .triplets {
         display: grid;
-        grid-template-rows: 1fr 4fr 4fr 4fr;
+        grid-template-rows: 5em 4fr 4fr 4fr;
         grid-template-columns: 100%;
         margin-left: 10%;
         margin-right: 10%;
@@ -701,12 +704,21 @@ footer p {
 
     .triplets article {
         margin-top: 5%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: 20em
     }
 
     .triplets h2 {
         margin-bottom: 0;
         padding-bottom: 0;
-        margin-top: auto;
+        margin-top: 0;
+    }
+    .triplets article p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 5em;
     }
 
     .blabla {
@@ -718,6 +730,7 @@ footer p {
 
     .blabla article:first-of-type {
         grid-area: 2/1/3/2;
+        box-shadow: 0 1px 10px black;
     }
 
     .blabla article:first-of-type h2 {
@@ -805,6 +818,9 @@ footer p {
         grid-area: 2/1/3/2;
         height: 100%;
     }
+    .quotes article:first-of-type p:first-of-type {
+        padding-top: 2em;
+    }
 
     .quotes article:first-of-type p:first-of-type,
     .quotes article:first-of-type p:nth-of-type(3) {
@@ -869,7 +885,40 @@ footer p {
         font-size: 2em;
         font-weight: 500
     }
+    .socials ul li img {
+        height: 3em;
+    }
+    .socials ul li {
+        padding-right: 1em
+    }
     footer {
         font-size: 0.8em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    .welcome {
+        display: none;
+    }
+    .blabla {
+        display: none;
+    }
+    .triplets {
+        display: none;
+    }
+    .quotes {
+        display: none;
+    }
+    .infos {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    nav {
+        display: none;
     }
 }
